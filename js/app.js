@@ -45,7 +45,7 @@ function clickMe (llave){
     setTimeout(() => {
     const caja = document.getElementById("box")
     caja.classList.add("box-motion")
-      }, "200");
+      }, "100");
  
 }
 

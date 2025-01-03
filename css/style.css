@@ -87,3 +87,20 @@ height: 100%;
 .box-motion-two{
     left:90vw;
 }
+
+#tres {
+    font-size: 600%;
+    animation-name: head;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head {
+  0%   { font-size:600%; opacity:1; }
+  25%  { font-size:570%; opacity:0; }
+  50%  { font-size:600%; opacity:1; }
+  65%  { font-size:570%; opacity:0; }
+  80%  { font-size:600%; opacity:1; }
+  90%  { font-size:570%; opacity:0; }
+  100% { font-size:600%;opacity:1;}
+}
