@@ -22,7 +22,7 @@
 }
 
 .pagOne{
-    background-color: crimson;
+    background-color: #183a77;
 }
 
 .pagTwo{
@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self: center;
     transition: all 400ms  ease-in;
     margin:0 1em;
  
@@ -62,7 +63,7 @@
 
 .navbar>ul>li>a{
    color:white;
-   margin:0 1em;
+   padding:0.5em 1em;
    font-size: 1.5em;
    align-items: center;
 width: 100%;
@@ -76,7 +77,7 @@ height: 100%;
     background-color: moccasin;
     position:fixed;
     top:0;
-    transition: all 0.6s  ease-in-out;
+    transition: all 0.5s  ease-in-out;
 
 }
 

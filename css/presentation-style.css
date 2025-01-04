@@ -1,49 +1,115 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-}
+:root {
+    --font-dnSans: "DM Sans", serif;
+    --font-vidaloka: "Vidaloka", serif;
+  
+    --color-blue-dark-001: #01326c;
+    --color-blue-dark-002: #0066cb;
 
+  }
+  
 
-.presentation{
-    width: 100vw;
-    height: 100vh;
-    color:white;
-    font-size: 3rem;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color:cornflowerblue;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
-.box{
-    color:white;
-    font-size: 3rem;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color:cornflowerblue;
-    width: 100vw;
-    height: 0vh;
-    background-color: moccasin;
-    position:fixed;
-    top:0;
-    transition: all 0.6s  ease-in-out;
+.presentation {
+  width: 100vw;
+  height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background: rgb(1,0,40);
+  background: linear-gradient(180deg, rgba(1,0,40,1) 81%, rgba(0,45,78,1) 100%);}
+
+.presentation>h1{
+    color: white;
+    font-family: var(--font-dnSans);
+    font-size: 5em;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
-.box-motion{
-    height: 100vh;
+/*
+background-image: url("../img/backgound-one.jpg"), linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(0, 166, 255) 100%);
+
+*/
+.box {
+
+  width: 100vw;
+  height: 0vh;
+  background-color:#010028;
+  position: fixed;
+  bottom: 0;
+  transition: all 0.6s ease-in-out;
 }
 
-.box-motion-two{
-    left:90vw;
+.box-motion {
+  height: 100vh;
 }
+
+.box-motion-two {
+  left: 90vw;
+}
+
+#text {
+  color: white;
+}
+
+#text:after {
+  content: "";
+  width: 10vw;
+  height: 10vh;
+  border: 1px solid transparent;
+  animation: spin 4s ;
+}
+
+@keyframes spin {
+  0% {
+    content: "         " ; color:#267fd3;
+  }
+  25% {
+    content: "Bienvenido";color:white;
+  }
+  50% {
+    content: "Welcome";color:white;
+  }
+  75% {
+    content: "Bonjour";color:white;
+  }
+  100% {
+    content: "        ";color:#267fd3;
+  }
+}
+
+
+.loader {
+    width: 10%;
+    height: 3px;
+    margin-top:6rem;
+    font-family: var(--font-dnSans);
+    background:linear-gradient(90deg,white 50%,#0000 0) right/200% 100%;
+    animation: l21 2s infinite linear;
+  
+   
+  }
+  .loader::before {
+    content :"";
+    padding: 0 1px;
+    background: inherit;
+    background-image: linear-gradient(90deg,#fff 50%,#000 0);
+    -webkit-background-clip:text;
+            background-clip:text;
+  }
+  
+  @keyframes l21{
+    100%{background-position: left}
+  }
