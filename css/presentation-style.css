@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
-    --font-dnSans: "DM Sans", serif;
-    --font-vidaloka: "Vidaloka", serif;
-  
+    --font-dnSans: "DM Sans", serif;  
     --color-blue-dark-001: #01326c;
     --color-blue-dark-002: #0066cb;
 
@@ -34,7 +32,7 @@
     font-size: 4em;
     text-transform: capitalize;
     font-weight: 400;
-    letter-spacing: 8px;
+    letter-spacing: 20px;
 }
 
 /*
@@ -98,7 +96,7 @@ background-image: url("../img/backgound-one.jpg"), linear-gradient(0deg, rgb(2, 
     margin-top:6rem;
     font-family: var(--font-dnSans);
     background:linear-gradient(90deg,white 50%,#0000 0) right/200% 100%;
-    animation: l21 2s infinite linear;
+    animation: l21 3s linear;
   
    
   }

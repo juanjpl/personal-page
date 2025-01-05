@@ -9,8 +9,8 @@ window.onload = function(e){
         caja.classList.add("box-motion")
           }, "3500");
 
-          /*
-          setTimeout(()=>{window.location = '../index.html' },5000)
-          */
+    
+          setTimeout(()=>{window.location = '../pages/pageOne.html' },4500)
+       
 }
     

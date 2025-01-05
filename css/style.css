@@ -22,7 +22,11 @@
 }
 
 .pagOne{
-    background-color: #183a77;
+    background-color: transparent;
+    background-image: url("../img/background-one.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .pagTwo{
