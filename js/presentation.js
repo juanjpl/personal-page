@@ -7,7 +7,7 @@ window.onload = function(e){
     setTimeout(() => {
         const caja = document.getElementById("box")
         caja.classList.add("box-motion")
-          }, "4000");
+          }, "3500");
 
           /*
           setTimeout(()=>{window.location = '../index.html' },5000)
