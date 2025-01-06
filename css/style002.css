@@ -12,8 +12,8 @@
   --color-font-brown-003:#EFE9E1;
 
   --offset: 0px;
-  --move-initial: calc(-25% + var(--offset));
-  --move-final: calc(-50% + var(--offset));
+  --move-initial: calc(-60% + var(--offset));
+  --move-final: calc(-70% + var(--offset));
 }
 
 * {
@@ -25,30 +25,16 @@
 }
 
 .brown-001{
-  color: var(--color-font-brown-001);
-
+  color:var(--color-font-brown-001);
 }
 
 html {
   background-color: transparent;
 }
 
-.pagOne,
-.pagTwo,
-.pagThree {
-  width: 100vw;
-  height: 100vh;
-  font-size: 3rem;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
 
-.pagOne,
 .pagThree {
-  background: #219aef;
+  background-color:  var(--color-font-brown-003);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -56,26 +42,16 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  font-size: 3rem;
+  text-transform: uppercase;
+  justify-content: space-around;
 }
 
-/*
-   background-image: url("../img/background-one.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-*/
-
-
-.pagTwo {
-  background-color: cornflowerblue;
-}
-
-.pagThree {
-  background-color:  var(--color-font-brown-003);
-  border:1px solid red;
-}
 
 .navbar {
+
   position: fixed;
   width: 100vw;
   height: 10%;
@@ -84,7 +60,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0 3em;
-  border:1px solid red;
 }
 
 .links {
@@ -93,9 +68,9 @@ html {
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  border:1px solid red;
 }
 .links > ul {
+  margin-bottom: 4em;
   width: 100%;
   height: max-content;
   display: flex;
@@ -103,6 +78,7 @@ html {
 }
 
 .links > ul > li {
+
   width: 60%;
   display: flex;
   flex-direction: row;
@@ -123,8 +99,8 @@ position: absolute;
 z-index: 1;
 bottom:0px;
 left:100%;
-border-bottom:100px solid red;
-border-top:100px solid red;
+border-bottom:100px solid var(--color-font-brown-002);
+border-top:100px solid var(--color-font-brown-002);
 border-left: 100px solid transparent;
 border-right: 100px solid transparent;
 transition: 0.6s ease-in-out all;
@@ -135,15 +111,20 @@ transition: 0.6s ease-in-out all;
   left:0px;
   }
 
+  .links > ul > li:hover >a {
+    color:white;
+    }
+
 .links > ul > li > a {
   padding: 0.2em 0.3em;
-  font-size: 1.2em;
+  font-size:0.4em;
   align-items: center;
   text-align: right;
   letter-spacing: 20px;
   width: 100%;
   height: 100%;
   z-index: 4;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar > .logo > h2 {
