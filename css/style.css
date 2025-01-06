@@ -12,8 +12,8 @@
   --color-font-brown-003:#EFE9E1;
 
   --offset: 0px;
-  --move-initial: calc(-25% + var(--offset));
-  --move-final: calc(-50% + var(--offset));
+  --move-initial: calc(-60% + var(--offset));
+  --move-final: calc(-80% + var(--offset));
 }
 
 * {
@@ -22,11 +22,6 @@
   box-sizing: border-box;
   font-family: var(--font-dnSans);
   color:white;
-}
-
-.brown-001{
-  color: var(--color-font-brown-001);
-
 }
 
 html {
@@ -48,7 +43,7 @@ html {
 
 .pagOne,
 .pagThree {
-  background: #219aef;
+  background: #7091e6;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -72,7 +67,6 @@ html {
 
 .pagThree {
   background-color:  var(--color-font-brown-003);
-  border:1px solid red;
 }
 
 .navbar {
@@ -84,7 +78,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0 3em;
-  border:1px solid red;
 }
 
 .links {
@@ -93,7 +86,6 @@ html {
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  border:1px solid red;
 }
 .links > ul {
   width: 100%;
