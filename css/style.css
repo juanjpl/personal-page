@@ -28,7 +28,16 @@
 }
 
 .pagOne {
-  background-color: #1877f2;
+  background: rgb(0, 39, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 39, 66, 1) 0%,
+    rgba(0, 57, 87, 1) 84%,
+    rgba(0, 74, 113, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
 /*
@@ -55,42 +64,48 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:0 3em;
+  padding: 0 3em;
+  border: 1px solid red;
 }
 
-.navbar > .logo,
-.navbar > .iniciales,
-.navbar > .links {
-  width: 33.33%;
+.links {
+  display: flex;
+  width: 50%;
   height: 100%;
-  align-content: center;
-
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid yellow;
+}
+.links > ul {
+  border: 1px solid green;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
 }
 
-.navbar > .links > ul {
+.links > ul > li {
+  border: 1px solid green;
+  width: 60%;
   display: flex;
   flex-direction: row;
-  height: 100%;
-  justify-content: right;
-}
-
-.navbar > .links > ul > li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: center;
+  align-self: flex-end;
   transition: all 400ms ease-in;
-  margin: 0 0.5em;
+  margin-bottom: 0.1em;
+  height: auto;
 }
-.navbar > .links > ul > li:hover {
+.links > ul > li:hover {
   border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.186);
 }
 
-.navbar > .links > ul > li > a {
+.links > ul > li > a {
+  border: 1px solid yellow;
   color: white;
-  padding: 0.5em 1em;
-  font-size: 1.3em;
+  padding: 0.1em 0.23em;
+  font-size: 1.8em;
   align-items: center;
+  text-align: right;
   letter-spacing: 2px;
   width: 100%;
   height: 100%;
@@ -125,35 +140,30 @@
   left: 90vw;
 }
 
-.pagOne>.img-hero{
+.pagOne > .img-hero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-image: url("../img/photo-two.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50vw;
-    background-position-y: 200px;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position-y: 200px;
 }
 
-.pagOne>.texto-hero{
-
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2em;
-
+.pagOne > .texto-hero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
 }
-.pagOne>.texto-hero>p{
-   font-size: 0.5em;
-   font-weight: 100;
-   margin-top: 1em;
-   letter-spacing: 2px;
-   line-height: 2em;
-
+.pagOne > .texto-hero > p {
+  font-size: 0.5em;
+  font-weight: 100;
+  margin-top: 1em;
+  letter-spacing: 2px;
+  line-height: 2em;
 }
