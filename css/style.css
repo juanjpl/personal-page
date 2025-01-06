@@ -22,7 +22,7 @@
   font-size: 3rem;
   text-transform: uppercase;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
@@ -98,6 +98,9 @@
 
 .navbar > .logo > h2 {
   text-transform: capitalize;
+  font-weight: 800;
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }
 .navbar > .iniciales > h2 {
   text-transform: uppercase;
@@ -122,40 +125,35 @@
   left: 90vw;
 }
 
-#tres {
-  font-size: 600%;
-  animation-name: head;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+.pagOne>.img-hero{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/photo-two.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    background-position-y: 200px;
+
 }
 
-@keyframes head {
-  0% {
-    font-size: 600%;
-    opacity: 1;
-  }
-  25% {
-    font-size: 570%;
-    opacity: 0;
-  }
-  50% {
-    font-size: 600%;
-    opacity: 1;
-  }
-  65% {
-    font-size: 570%;
-    opacity: 0;
-  }
-  80% {
-    font-size: 600%;
-    opacity: 1;
-  }
-  90% {
-    font-size: 570%;
-    opacity: 0;
-  }
-  100% {
-    font-size: 600%;
-    opacity: 1;
-  }
+.pagOne>.texto-hero{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+
+}
+.pagOne>.texto-hero>p{
+   font-size: 0.5em;
+   font-weight: 100;
+   margin-top: 1em;
+   letter-spacing: 2px;
+   line-height: 2em;
+
 }
