@@ -34,13 +34,6 @@
     font-weight: 400;
     letter-spacing: 20px;
 }
-
-/*
-  background: rgb(1,0,40);
-  background: linear-gradient(180deg, rgba(1,0,40,1) 81%, rgba(0,45,78,1) 100%);}
-background-image: url("../img/backgound-one.jpg"), linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(0, 166, 255) 100%);
-
-*/
 .box {
 
   width: 100vw;
