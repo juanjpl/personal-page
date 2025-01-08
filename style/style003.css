@@ -3,17 +3,21 @@
 :root {
   --font-dnSans: "DM Sans", serif;
 
-  --color-blue-dark-001: #01326c;
-  --color-blue-dark-002: #0066cb;
-
   --color-font-brown-001:#A47864;
   --color-font-brown-002:#C0A294;
-  --color-font-brown-003:#A69A90;
+  --color-font-brown-004:#A69A90;
   --color-font-brown-003:#EFE9E1;
 
+  --color-font-red-001:#e85a4f;
+  --color-font-red-002:#e98074;
+  --color-font-brown-005:#8e8d8a;
+  --color-font-brown-006:#d8c3a5;
+  --color-font-brown-007:#eae7dc;
+
+
   --offset: 0px;
-  --move-initial: calc(-60% + var(--offset));
-  --move-final: calc(-70% + var(--offset));
+  --move-initial: calc(-5% + var(--offset));
+  --move-final: calc(-20% + var(--offset));
 }
 
 * {
@@ -21,47 +25,34 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-dnSans);
-  color:#5085a5;
+  color:var(--color-font-brown-001);
 }
+
 
 html {
   background-color: transparent;
 }
 
-.pagOne,
-.pagTwo,
+
 .pagThree {
-  width: 100vw;
-  height: 100vh;
-  font-size: 3rem;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-
-
-.pagOne {
-  background: #b5e1fe;
+  background-color:  var(--color-font-brown-007);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   background-image: url("../img/s-l1200.png");
-  background-size: 55%;
-  background-position-x: center;
-  background-position-y: -1em;
+  background-position: center;
   background-repeat: no-repeat;
-
-}
-
-.pagTwo {
-  background-color: cornflowerblue;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  justify-content: space-around;
 }
 
 
 .navbar {
+
   position: fixed;
   width: 100vw;
   height: 10%;
@@ -69,13 +60,15 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3em;
+  padding: 0 2em;
 }
+
+
 
 .links {
   display: flex;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
 }
@@ -84,15 +77,17 @@ html {
   height: max-content;
   display: flex;
   flex-direction: column;
+
 }
 
 .links > ul > li {
+
   width: 60%;
   display: flex;
   flex-direction: row;
   align-self: flex-end;
   transition: all 400ms ease-in;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
   height:max-content;
   position: relative;
   overflow: hidden;
@@ -107,8 +102,8 @@ position: absolute;
 z-index: 1;
 bottom:0px;
 left:100%;
-border-bottom:100px solid #5085a5;
-border-top:100px solid #5085a5;
+border-bottom:100px solid var(--color-font-red-002);
+border-top:100px solid var(--color-font-red-002);
 border-left: 100px solid transparent;
 border-right: 100px solid transparent;
 transition: 0.6s ease-in-out all;
@@ -118,14 +113,15 @@ transition: 0.6s ease-in-out all;
 .links > ul > li:hover::after {
   left:0px;
   }
-  .links > ul > li:hover>a {
+
+  .links > ul > li:hover >a {
     color:white;
     }
 
 .links > ul > li > a {
-  color:#5085a5;
-  padding: 0.2em 0.3em;
-  font-size: 1.2em;
+  padding: 0.2em 1.8em;
+  margin:0.5em;
+  font-size:0.6em;
   align-items: center;
   text-align: right;
   letter-spacing: 20px;
@@ -140,6 +136,11 @@ transition: 0.6s ease-in-out all;
   font-weight: 800;
   font-size: 1.2em;
   letter-spacing: 2px;
+  padding:0.5em 0.8em;
+  border:1px solid var(--color-font-brown-001);
+  background-color: var(--color-font-brown-001);
+  color:white;
+
 }
 .navbar > .iniciales > h2 {
   text-transform: uppercase;
@@ -150,7 +151,7 @@ transition: 0.6s ease-in-out all;
 .box {
   width: 0vw;
   height: 100vh;
-  background-color: moccasin;
+  background-color: var(--color-font-brown-002);
   position: fixed;
   top: 0;
   transition: all 0.5s ease-in-out;
@@ -207,6 +208,41 @@ transition: 0.6s ease-in-out all;
   }
 }
 
+.links>ul>div{
+padding-right: 0.2em;
+margin-top: 0.6em;
+  width: 100%;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: max-content;
+
+
+
+}
+
+.social-icons>a{
+
+  display: flex;
+  margin:0 0.2em;
+}
+.social-icons>a>i{
+
+  padding:  0.3em;
+  margin:0 0.2em;
+  width: max-content;
+  font-size: 1.8em;
+  transition:all 0.8s ease-in-out;
+  color:var(--color-font-red-001);
+}
+.social-icons>a>i:hover{
+
+scale:1.5;
+  }
+
+
 
 .logo>h2{
   position: relative;
@@ -218,13 +254,4 @@ transition: 0.6s ease-in-out all;
   0%   {left: 0px; top: 0px;}
   100%  {left: 10px; top: 0px;}
 
-}
-
-.texto-central{
-border: 1px solid red;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 }

@@ -13,7 +13,7 @@
 
   --offset: 0px;
   --move-initial: calc(-5% + var(--offset));
-  --move-final: calc(-25% + var(--offset));
+  --move-final: calc(-20% + var(--offset));
 }
 
 * {
@@ -44,7 +44,7 @@ html {
   background-size: contain;
   width: 100vw;
   height: 100vh;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   justify-content: space-around;
 }
@@ -230,3 +230,15 @@ margin-top: 0.6em;
 }
 
 
+
+.logo>h2{
+  position: relative;
+  animation: myfirst 0.5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {left: 0px; top: 0px;}
+  100%  {left: 10px; top: 0px;}
+
+}
